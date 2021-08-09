@@ -24,13 +24,15 @@
   }
 </style>
 
+{#the template file where variables can be passed#}
+
 <body>
 <header>
-
+{#anachors to 'pages'#}
 <a href="/">Home</a> | <a href="/about">About</a>
 
 </header>
-
+{# how does njk know which content to render? Home or about#}
 {{content | safe}}
 </body>
 

@@ -8,8 +8,12 @@ layout: base.njk
     <div class="vibe">
       JamStack is great
     </div>
-    <div class="love">
-    
+    <div class="love">   
     </div>
+    <ul>
+    {% for articles in news.articles %}
+    <li>{{articles.title}}</li>
+    {% endfor %}
+    </ul>
 </div>
 <script src="/js/vibe.js"></script>
