@@ -12,7 +12,12 @@ layout: base.njk
     </div>
     <ul>
     {% for articles in news.articles %}
-    <li>{{articles.title}}</li>
+    <li>
+    <h3><a href={{articles.url}}>{{articles.title}}</a></h3>
+    <img src="{{articles.urlToImage}}" alt="{{articles.title}}">
+    <p>{{articles.content}}</p>
+    <span>Author: <b>{{articles.author}}</b>: {{articles.publishedAt}}</span>
+    </li>
     {% endfor %}
     </ul>
 </div>
