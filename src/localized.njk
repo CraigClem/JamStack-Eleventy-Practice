@@ -1,0 +1,28 @@
+---
+title: Daily Breifing 
+layout: base.njk
+pagination: 
+  data: news
+  size: 1
+  alias: news
+permalink : /{{ news.country }}/index.html
+--- 
+<div class="container">
+    <h1>JamStack practice</h1>
+    <div class="vibe">
+      JamStack is great
+    </div>
+    <div class="love">   
+    </div>
+    <ul>
+    {% for articles in news.articles %}
+    <li>
+    <h3><a href="{{articles.url}}">{{articles.title}}</a></h3>
+    <img src="{{articles.urlToImage}}" alt="{{articles.title}}">
+    <p>{{articles.content}}</p>
+    <span>Author: <b>{{articles.author}}</b> <em>{{articles.publishedAt}}</em></span>
+    </li>
+    {% endfor %}
+    </ul>
+</div>
+<script src="/js/vibe.js"></script>
