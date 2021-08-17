@@ -1,8 +1,7 @@
 ---
 title: JamStack practice
 layout: base.njk
----
- 
+--- 
 <div class="container">
     <h1>JamStack practice</h1>
     <div class="vibe">
@@ -11,7 +10,7 @@ layout: base.njk
     <div class="love">   
     </div>
     <ul>
-    {% for articles in news.articles %}
+    {% for articles in news[0].articles %}
     <li>
     <h3><a href="{{articles.url}}">{{articles.title}}</a></h3>
     <img src="{{articles.urlToImage}}" alt="{{articles.title}}">
