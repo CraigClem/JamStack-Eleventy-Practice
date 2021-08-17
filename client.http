@@ -1,6 +1,6 @@
 @API-Key = f31920bab9ae436bab2b02e8317fad5a
 
-### get all uk top headlines
+### get all uk headlines
 
-GET https://newsapi.org/v2/top-headlines?country=gb&apiKey=f31920bab9ae436bab2b02e8317fad5a
+GET https://newsapi.org/v2/top-headlines?country=gb&apiKey={{API-Key}}
 

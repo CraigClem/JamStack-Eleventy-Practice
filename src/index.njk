@@ -10,7 +10,7 @@ layout: base.njk
     <div class="love">   
     </div>
     <ul>
-    {% for article in news.articles %}
+    {% for articles in news[0].articles %}
     <li>
     <h3><a href="{{articles.url}}">{{articles.title}}</a></h3>
     <img src="{{articles.urlToImage}}" alt="{{articles.title}}">
